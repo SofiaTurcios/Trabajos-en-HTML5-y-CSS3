@@ -1,0 +1,63 @@
+/*ANIMACIONES*/
+
+/*animación 1: Muestra el efecto máquina de escribir*/
+@keyframes escribir {
+  from { width: 100% }
+  to { width:0 }
+}
+  
+
+/*animación 2: hace que un texto se deslice de arriba a abajo*/
+@keyframes slideIn {
+  from {
+      transform: translateY(-200%);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+  
+  .container {
+    text-align: center; 
+  }
+  
+  .slide-left {
+    animation: slideLeft 1s ease forwards;
+}
+
+
+/*animación 3: las imágenes aumenten de tamaño al pasar el mouse sobre ellas*/
+img {
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+ 
+
+/*animación 4: hace que un elemento aumente gradualmente su intensidad*/ 
+@keyframes fadeIn {
+    from {
+      opacity: 0; 
+    }
+    to {
+      opacity: 1; 
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+  
+
+/*animación 5: zoom*/
+@keyframes zoomIn {
+  from {
+      transform: scale(1); /*tamaño normal*/
+  }
+  to {
+      transform: scale(1.1); /*tamaño aumentado*/
+  }
+}
+  
